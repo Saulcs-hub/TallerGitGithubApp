@@ -57,19 +57,19 @@ fun ProfileCard() {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(30.dp),
+            .padding(16.dp),
         shape = MaterialTheme.shapes.large,
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
     ) {
         Column(
             modifier = Modifier
-                .padding(50.dp),
+                .padding(24.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
             // Imagen circular
             Image(
-                painter = painterResource(id = R.drawable.fotomia), // puedes cambiarla
+                painter = painterResource(id = R.drawable.fotomia),
                 contentDescription = "Foto de perfil",
                 modifier = Modifier
                     .size(120.dp)
@@ -79,12 +79,63 @@ fun ProfileCard() {
 
             Spacer(modifier = Modifier.height(16.dp))
 
+            // Nombre en negrita
+            Text(
+                text = "Carlos Saul Villabona",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold
+            )
+
+            // Rol
+            Text(
+                text = "Ingeniero de sistemas",
+                fontSize = 16.sp,
+                color = Color.Gray
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Divider()
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Edad
+            Text(text = "EDAD", fontWeight = FontWeight.Bold, fontSize = 12.sp)
+            Text(text = "22 Años")
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            // Correo
+            Text(text = "CORREO", fontWeight = FontWeight.Bold, fontSize = 12.sp)
+            Text(text = "cvillabona353@unab.edu.co", color = MaterialTheme.colorScheme.primary)
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            // Ciudad
+            Text(text = "CIUDAD", fontWeight = FontWeight.Bold, fontSize = 12.sp)
+            Text(text = "Bucaramanga")
+
+            Spacer(modifier = Modifier.height(16.dp))
+
             Divider()
 
             Spacer(modifier = Modifier.height(16.dp))
 
 
 
+            Spacer(modifier = Modifier.height(8.dp))
+
+
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // Botón inferior
+            Button(
+                onClick = { /* Acción */ },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Contactar")
+            }
         }
     }
 }

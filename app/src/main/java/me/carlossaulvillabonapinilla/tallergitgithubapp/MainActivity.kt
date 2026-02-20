@@ -121,11 +121,19 @@ fun ProfileCard() {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-
+            // Sección descriptiva
+            Text(
+                text = "SOBRE MI MATERIA FAVORITA",
+                fontWeight = FontWeight.Bold,
+                fontSize = 12.sp
+            )
 
             Spacer(modifier = Modifier.height(8.dp))
 
-
+            Text(
+                text = "Mi materia preferida de este semestre es esta desarrollo de aplicaciones moviles, pero me gustaria mucho aprender sobre siberseguridad es un tema que me apasiona demasiado y me veo en un futuro ejerciendo como ingeniero en ciberseguridad",
+                textAlign = TextAlign.Center
+            )
 
             Spacer(modifier = Modifier.height(20.dp))
 
